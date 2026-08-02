@@ -1,0 +1,51 @@
+
+{
+    "companyName":"Chap's Ice Cream",
+    "headOffice":"123 Toronto Ontario, Canada",
+    "established":1995,
+    "active":true,
+    "topFlavors": [{
+        "name":"Chocolate Mint",
+        "calories":200,
+        "type":"Ice cream",
+        "ingredients":["choclate syrup", "vanilla extract", "Sugar", "Milk", "Cream"],
+        "images": "https://fisraiagan.github.io/Client-side-JavaScript-summer-course/lesson-10/26S-JavaScript-02-Week10-main/images/chocolate-mint.svg",
+        "rating": 4.5
+        },{
+        "name":"Strawberry-Sprinkle",
+        "calories":220,
+        "type":"Milkshake",
+        "ingredients":["Strawberry syrup", "vanilla extract", "Sugar", "Milk", "Cream"],
+        "images": "https://fisraiagan.github.io/Client-side-JavaScript-summer-course/lesson-10/26S-JavaScript-02-Week10-main/images/strawberry-sprinkle.svg",
+        "rating": 4.0
+    },
+
+    {
+        "name":"Peach mango",
+        "calories":240,
+        "type":"Ice cream",
+        "ingredients":["Peach syrup", "Mango chunks", "Sugar", "Milk", "Cream"],
+        "images": "https://fisraiagan.github.io/Client-side-JavaScript-summer-course/lesson-10/26S-JavaScript-02-Week10-main/images/peach-mango.svg",
+        "rating": 4.2
+    },
+    {
+        "name":"Vanilla",
+        "calories":180,
+        "type":"Classic",
+        "ingredients":["Vanilla syrup", "Strawberry syrup", "Sugar", "Milk", "Cream"],
+        "images": "https://fisraiagan.github.io/Client-side-JavaScript-summer-course/lesson-10/26S-JavaScript-02-Week10-main/images/ice-cream-xtra2.svg",
+        "rating": 4.1
+    },
+        {
+            "name":"cookies and cream",
+            "calories":250,
+            "type":"Ice cream",
+            "ingredients":["cookies", "Vanilla syrup", "Sugar", "Whole Milk", "Heavy Cream"],
+            "images": "https://fisraiagan.github.io/Client-side-JavaScript-summer-course/lesson-10/26S-JavaScript-02-Week10-main/images/ice-cream-xtra1.svg",
+            "rating": 4.3
+        }
+]
+ 
+
+
+}
