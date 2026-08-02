@@ -7,6 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="js/buildAPI.js?v=4" defer></script>
+    <script src="js/assignment3.js" defer></script>
 </head>
 
 <body>
@@ -15,11 +16,13 @@
 
     <h1>Player Search</h1>
 
-    <label for="searchPlayer">Enter any major league player name:</label>
-    <input type="text" id="searchPlayer" class="searchPlayer" placeholder="Enter player name" required>
-
-    <button id="searchBtn">Search</button>
-	<p>Search some of these players</p>
+    <form id="playerForm">
+        <label for="searchPlayer">Enter any major league player name:</label>
+        <input type="text" id="searchPlayer" class="searchPlayer" placeholder="Enter player name" required>
+        <button id="searchBtn">Search</button>
+    </form>
+	
+    <p>Search some of these players</p>
 	<ul>
 		<li>Lamine yamal</li>
 		<li>Chase Elliot</li>
