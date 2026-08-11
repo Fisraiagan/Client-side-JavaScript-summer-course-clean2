@@ -19,7 +19,7 @@ async function populate() {
     let responseJson = await response.json();
     
     // STEP 8: Output the iScream JSON object to the console
-    console.log(responseJson);
+    console.log("Response: " + JSON.stringify(responseJson));
     
     // STEP 9a: Invoke the populateHeader function here, then build it below
     populateHeader(responseJson);
@@ -51,7 +51,7 @@ function showTopFlavors(jsonObj) {
 // STEP 10d: Loop through the topFlavors object
     for (let i = 0; i < topFlavors.length; i++) {
 
-        console.log(topFlavors[i]);
+        console.log("Top Flavors: "+topFlavors[i]);
 // STEP 10e: build HTML elements for the content: article, h2, image, p1, p2, list
         let myArticle = document.createElement("article");
         let myH2 = document.createElement("h2");
@@ -70,7 +70,7 @@ function showTopFlavors(jsonObj) {
 // STEP 10g: Build a loop for the ingredients array in the JSON
         let ingredients = topFlavors[i].ingredients;
         for(let j = 0; j < ingredients.length; j++) {
-            console.log(ingredients[j]);
+            console.log("ingredients: "+ingredients[j]);
 // STEP 10h: Create a list item for each ingredient and append to the UL element
             let listItem = document.createElement("li");
             listItem.textContent = ingredients[j];

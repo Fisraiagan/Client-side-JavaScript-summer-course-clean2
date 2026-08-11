@@ -15,14 +15,14 @@ function updateDisplay(verse) {
 console.log("user selected verse " + verse);
 
 // STEP 4: Declare and initialize URL to point to text file(s)
-let url = ``;
+let url = `https://fisraiagan.github.io/Client-side-JavaScript-summer-course-clean2/lesson-11/${verse}.txt`;
 console.log(url);
 
 // STEP 5: Build fetch() with promises
 // STEP 5a: Use fetch and pass in the URL
 // STEP 5b: The fetch() will return a promise - which when received from the server, the promise's then() event handler is called using the response
     fetch(url).then((response) => {
-        console.log(response);
+        console.log("Response: " + JSON.stringify(response));
         // STEP 5c: If the response is not okay, throw an error containing the HTTP status
     if (!response.ok) {
         throw new Error("Error occurred");
@@ -31,13 +31,13 @@ console.log(url);
         return response.text();
         // STEP 5e: Once response.text() has returned a value, the then() handler can pass in the text string to the textContent property of the poemDisplay element
     }).then((text) => {
-        console.log(text);
+        console.log("text: "+ text);
         pre.textContent = text;
 
         // STEP 5f: Finish the chain with a catch() to grab any errors that may have been thrown by the promise, and display them on the page
     }).catch((error) => {
         console.error(error);
-        pre.textContent = "An error occurred while fetching the poem.";
+        pre.textContent = error;
     });
 
     
@@ -50,5 +50,5 @@ console.log(url);
 }
 
 // STEP 6: Initialize the app with Verse 1
-
+updateDisplay("verse1");
 // This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data

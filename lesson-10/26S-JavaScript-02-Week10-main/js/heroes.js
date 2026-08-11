@@ -52,13 +52,13 @@ for(const power of superPowers){
     listItem.textContent = power;
     myList.appendChild(listItem);
 
-    myArticle.appendChild(myH2);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
-    myArticle.appendChild(myList);
-    section.appendChild(myArticle);
 }
+myArticle.appendChild(myH2);
+myArticle.appendChild(myPara1);
+myArticle.appendChild(myPara2);
+myArticle.appendChild(myPara3);
+myArticle.appendChild(myList);
+section.appendChild(myArticle);
 
     }
 }

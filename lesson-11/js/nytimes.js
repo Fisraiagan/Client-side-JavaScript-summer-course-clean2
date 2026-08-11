@@ -19,7 +19,7 @@ function fetchResults(event) {
     event.preventDefault();
     // STEP 3: Assemble the full URL, according to the API documentation at the New York Times
     //https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=DOXMkIqn7WSk86iTzTry4VtAbNBTysTiAGmErbTM0wAIFlMK  
-    url =`${baseURL}?q=${searchTerm.value}&api-key=${key}&begin_date=${startDate.value}&end_date=${endDate.value}`;
+    url =`${baseURL}?q=${searchTerm.value}&api-key=${key}`;
     console.log("URL:", url);
     // STEP 4: Use fetch() to pass the URL that we built as a request to the API service, then pass the JSON to the displayResults() function
     fetch(url).then(response =>{

@@ -119,11 +119,11 @@ class Cappuccino extends Latte{
             this.chocolateType = chocolateType;
         };
         desc(){
-            return `A ${this.size} ${this.isDecaf ? "decaffinated" : "caffinated"} latte with ${this.milkType} milk and ${this.chocolateType} chocolate.`
+            return `A ${this.size} ${this.isDecaf ? "decaffinated" : "caffinated"} latte with ${this.milkType} milk and ${this.flavours} flavour and ${this.chocolateType} chocolate.`
         }
 
     }
 
-    tylorMocha = new Mocha("Small", false, "Almond", "vanilla", "Dark");
+    let tylorMocha = new Mocha("Small", false, "Almond", "vanilla", "Dark");
     
     tylorMocha.serveIt();
